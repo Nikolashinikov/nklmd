@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKL Mídias Digitais</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NKL Mídias Digitais</h1>
+        <p>Fotografia & Audiovisual</p>
+    </header>
+    <nav>
+        <a href="nkl.html">HOME</a>
+        <a href="empresa.html">A EMPRESA</a>
+        <a href="portifolio.html">PORTIFÓLIO</a>
+        <a href="orcamento.html">ORÇAMENTO</a>
+        <a href="contato.html">CONTATOS</a>
+    </nav>
+    <main>      
+        <section class="form">
+            <h1>Solicite seu orçamento</h1><br>
+                <form action="orcamento.php" autocomplete="on" method="post" class="format">
+                    <label for="inome"><br><p>Nome:</label>
+                        <input type="text" name="nome" id="inome" size="30" maxlength="50" required></p>
+                    <label for="iemail"><p>Email:</label>
+                        <input type="email" id="iemail" name="email" maxlength="40" size="25" required></p>
+                    <label for="icel"><p>Celular:</label>
+                        <input type="tel" id="icel" name="cel" maxlength="11" size="12" required placeholder="  DDD + Número"></p>
+                    <label for="iservico"><p>Serviço:</label>
+                        <select name="iservico" id="iservico">
+                            <option value="corp">Corporativo</option>
+                            <option value="ensaio1">Ensaio Fotográfico: Individual</option>
+                            <option value="ensaio2">Ensaio Fotográfico: Casal</option>
+                            <option value="festaIF">Festa Infantil: Fotografia</option>
+                            <option value="festaIFV">Festa Infantil: Foto + Vídeo</option>
+                            <option value="festaAF">Festa Adulto: Fotografia</option>
+                            <option value="festaAFV">Festa Adulto: Foto + Vídeo</option>
+                        </select></p>
+                        <br><p><input type="submit" name="enviar" value=" Enviar "></p>
+                </form>
+        </section>
+        <div class="back"><a href="nkl.html">Voltar</a></div>
+    </main>
+</body>
+<footer>Desenvolvido por Nikolas Oliveira. © </footer>
+</html>
